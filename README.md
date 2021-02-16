@@ -10,11 +10,6 @@ Using a Kubernetes development environment using a Vagrant Box allows to:
 4. Use the IDE of our preference on your own computer
 5. Use the environment only to build and test your changes. You can turn it up or down whenever you want.
 
-An alternative to this project would be:
-
-- **KinD** which uses Docker instead of Virtual Box. KinD may consume less resources than KuDE and may provision the environment quicker (Containers vs VMs).
-- **VM on a Cloud** can be setup using the same provisioning script but requires access to internet and will cost you. However, the performance may be better as you are not consuming your computer resources.
-
 - [Kubernetes Development Environment](#kubernetes-development-environment)
   - [Forking](#forking)
   - [Requirements](#requirements)
@@ -23,6 +18,7 @@ An alternative to this project would be:
   - [Git workflow](#git-workflow)
   - [Build Kubernetes](#build-kubernetes)
   - [Testing Kubernetes](#testing-kubernetes)
+  - [Alternatives](#alternatives)
   - [Credits](#credits)
 
 ## Forking
@@ -210,6 +206,13 @@ You can also use the parameter `GOFLAGS="-v"` to tests in verbose mode. For exam
 ```bash
 sudo make test-integration WHAT=./test/integration/pods GOFLAGS="-v"
 ```
+
+## Alternatives
+
+The alternatives to this project would be:
+
+- **KinD** which uses Docker instead of Virtual Box. KinD may consume less resources than KuDE and may provision the environment quicker (Containers vs VMs).
+- **VM on a Cloud** can be setup using the same provisioning script but requires access to internet and will cost you. However, the performance may be better as you are not consuming your computer resources.
 
 ## Credits
 
